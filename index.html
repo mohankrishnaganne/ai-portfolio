@@ -1,85 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John W. Smith - Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Mohan Krishna Ganne - AI/ML Engineer</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
         }
+        .dark {
+            color-scheme: dark;
+        }
     </style>
 </head>
-<body class="bg-gray-900 text-gray-200 antialiased">
-
+<body class="bg-gray-900 text-gray-100 antialiased leading-relaxed">
     <div class="container mx-auto px-4 py-8 max-w-4xl">
 
         <!-- Header Section -->
-        <header class="text-center mb-12">
-            <h1 class="text-5xl font-extrabold text-white mb-2">John W. Smith</h1>
-            <p class="text-lg text-gray-400 mb-4">2002 Front Range Way Fort Collins, CO 80525 | <a href="mailto:jwsmith@colostate.edu" class="text-blue-400 hover:underline">jwsmith@colostate.edu</a></p>
-
-            <!-- Education - Prominently Captured -->
-            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
-                <h2 class="text-3xl font-bold text-white mb-3">Education</h2>
-                <div class="text-left">
-                    <p class="text-xl font-semibold text-gray-300">University of Arkansas at Little Rock, Little Rock, AR</p>
-                    <ul class="list-disc list-inside ml-4 mt-2 text-gray-400">
-                        <li>BS in Early Childhood Development (1999)</li>
-                        <li>BA in Elementary Education (1998)</li>
-                        <li>GPA (4.0 Scale): Early Childhood Development – 3.8, Elementary Education – 3.5, Overall 3.4</li>
-                        <li>Dean’s List, Chancellor’s List</li>
-                    </ul>
-                </div>
+        <header class="mb-10 text-center">
+            <h1 class="text-5xl font-extrabold text-blue-400 mb-2">Mohan Krishna Ganne</h1>
+            <p class="text-lg text-gray-300 mb-4">AI/ML Engineer</p>
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-md text-gray-400 mb-6">
+                <span>+1 (316) 214-0932</span>
+                <span>|</span>
+                <a href="mailto:mohankrishna5618@gmail.com" class="hover:text-blue-300 transition-colors">mohankrishna5618@gmail.com</a>
+                <span>|</span>
+                <a href="#" class="hover:text-blue-300 transition-colors">LinkedIn</a>
+                <span>|</span>
+                <a href="#" class="hover:text-blue-300 transition-colors">Portfolio</a>
+                <span>|</span>
+                <span>Open to Relocation</span>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md border border-gray-700">
+                <h2 class="text-2xl font-semibold text-blue-400 mb-2">Education</h2>
+                <p class="text-lg text-gray-300">
+                    <strong>Master of Science in Data Science</strong> | Wichita State University, Kansas
+                    <span class="block md:inline-block md:ml-4 text-gray-400">GPA: 3.80/4.0</span>
+                </p>
             </div>
         </header>
 
-        <!-- Career Summary -->
-        <section class="mb-12 p-6 bg-gray-800 rounded-lg shadow-lg border border-gray-700">
-            <h2 class="text-3xl font-bold text-white mb-4">Career Summary</h2>
-            <p class="text-lg text-gray-300">Four years experience in early childhood development with a diverse background in the care of special needs children and adults.</p>
+        <!-- Summary Section -->
+        <section class="mb-10 p-6 bg-gray-800 rounded-lg shadow-md border border-gray-700">
+            <h2 class="text-3xl font-bold text-blue-400 mb-4">Summary</h2>
+            <p class="text-gray-300 leading-relaxed">
+                AI/ML Engineer with 5+ years of experience building production-grade machine learning, Generative AI, and LLM systems across smart devices,
+                digital engineering, and AI infrastructure domains. Experienced in developing RAG pipelines, multimodal AI applications, fine-tuning workflows,
+                model evaluation frameworks, distributed data pipelines, and scalable inference services on cloud-native architectures. Strong background in
+                MLOps, LLMOps, model serving, and end-to-end ownership of AI systems from experimentation through production deployment.
+            </p>
         </section>
 
-        <!-- Experience Sections -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-white mb-6 text-center">Experience</h2>
+        <!-- Skills Section -->
+        <section class="mb-10 p-6 bg-gray-800 rounded-lg shadow-md border border-gray-700">
+            <h2 class="text-3xl font-bold text-blue-400 mb-4">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-300">
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-300 mb-2">Programming Languages</h3>
+                    <ul class="list-disc list-inside ml-4 space-y-1">
+                        <li>Python, SQL, Scala, Pandas</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-300 mb-2">ML & Deep Learning</h3>
+                    <ul class="list-disc list-inside ml-4 space-y-1">
+                        <li>PyTorch, TensorFlow, Scikit-learn, XGBoost, LightGBM</li>
+                        <li>Feature Engineering, Hyperparameter Optimization, Ensemble Learning</li>
+                        <li>Time-Series Forecasting, Model Evaluation, Explainable AI (SHAP, LIME)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-300 mb-2">Generative AI & LLMs</h3>
+                    <ul class="list-disc list-inside ml-4 space-y-1">
+                        <li>Hugging Face Transformers, LLaMA, GPT APIs, Prompt Engineering</li>
+                        <li>LangChain, LangGraph, Tool-Calling Agents, LoRA, QLoRA, PEFT</li>
+                        <li>Fine-Tuning, Retrieval-Augmented Generation (RAG), Embeddings</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-300 mb-2">Vector Databases & Retrieval</h3>
+                    <ul class="list-disc list-inside ml-4 space-y-1">
+                        <li>Pinecone, FAISS, Weaviate, Elasticsearch</li>
+                        <li>Semantic Search, Hybrid Search, Cross-Encoder Reranking</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-300 mb-2">MLOps & AI Infrastructure</h3>
+                    <ul class="list-disc list-inside ml-4 space-y-1">
+                        <li>MLflow, Weights & Biases, Airflow, DVC</li>
+                        <li>Docker, Kubernetes, CI/CD Pipelines, Drift Detection, A/B Testing</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-300 mb-2">Distributed Computing & Data Engineering</h3>
+                    <ul class="list-disc list-inside ml-4 space-y-1">
+                        <li>Apache Spark, Databricks, Snowflake, Kafka, Ray</li>
+                        <li>ETL Pipelines, Distributed Training</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-300 mb-2">Model Serving & Optimization</h3>
+                    <ul class="list-disc list-inside ml-4 space-y-1">
+                        <li>FastAPI, REST APIs, gRPC, vLLM, ONNX Runtime, TensorRT, Quantization</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-300 mb-2">Cloud Platforms</h3>
+                    <ul class="list-disc list-inside ml-4 space-y-1">
+                        <li>AWS (S3, EC2, Lambda, SageMaker, Bedrock), Azure OpenAI Service, Terraform</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-300 mb-2">Databases, Tools & Platforms</h3>
+                    <ul class="list-disc list-inside ml-4 space-y-1">
+                        <li>PostgreSQL, MongoDB, Redis, Git, GitHub Actions, Linux, Jira, Confluence</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-            <!-- Adult Care Experience -->
-            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 mb-8">
-                <h3 class="text-2xl font-semibold text-white mb-3">Adult Care Experience</h3>
-                <ul class="list-disc list-inside ml-4 text-gray-300 space-y-2">
-                    <li>Determined work placement for 150 special needs adult clients.</li>
-                    <li>Maintained client databases and records.</li>
-                    <li>Coordinated client contact with local health care professionals on a monthly basis.</li>
-                    <li>Managed 25 volunteer workers.</li>
+        <!-- Experience Section -->
+        <section class="mb-10 p-6 bg-gray-800 rounded-lg shadow-md border border-gray-700">
+            <h2 class="text-3xl font-bold text-blue-400 mb-4">Experience</h2>
+
+            <!-- NIAR -->
+            <div class="mb-8 pb-6 border-b border-gray-700 last:border-b-0">
+                <div class="flex justify-between items-baseline mb-2">
+                    <h3 class="text-2xl font-semibold text-gray-100">AI/ML Engineer</h3>
+                    <span class="text-md text-gray-400">Mar 2025 – Present | United States</span>
+                </div>
+                <p class="text-lg text-blue-300 mb-3">NIAR</p>
+                <ul class="list-disc ml-6 space-y-2 text-gray-300">
+                    <li>Developed Generative AI and RAG-based engineering knowledge assistants using Python, LangChain, LangGraph, OpenAI APIs, Pinecone, and hybrid retrieval, enabling researchers to query 1.8 million technical records and reducing document search efforts by 320 hours per quarter.</li>
+                    <li>Built machine learning pipelines with PyTorch, Hugging Face Transformers, MLflow, and Databricks to support predictive maintenance and structural health monitoring initiatives, processing 14 TB of sensor and inspection datasets across aircraft sustainment programs.</li>
+                    <li>Fine-tuned domain-specific language models using LoRA, QLoRA, and PEFT techniques, reducing training resource requirements and supporting specialized question-answering workflows for engineering documentation and certification datasets.</li>
+                    <li>Designed FastAPI-based inference services with vLLM, ONNX Runtime, Docker, and Kubernetes, supporting approximately 75,000 monthly inference requests and reducing model release cycles from three weeks to six days.</li>
+                    <li>Developed evaluation frameworks using RAGAS, DeepEval, and hallucination detection techniques, supported production AI services, and resolved more than 110 issues affecting model reliability and data quality.</li>
+                    <li>Implemented distributed feature engineering and ETL pipelines using Apache Spark, Airflow, Kafka, Snowflake, and AWS S3, enabling scalable data ingestion and analytics for digital twin and predictive maintenance initiatives.</li>
                 </ul>
             </div>
 
-            <!-- Childcare Experience -->
-            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
-                <h3 class="text-2xl font-semibold text-white mb-3">Childcare Experience</h3>
-                <ul class="list-disc list-inside ml-4 text-gray-300 space-y-2">
-                    <li>Coordinated service assignments for 20 part-time counselors and 100 client families.</li>
-                    <li>Oversaw daily activity and outing planning for 100 clients.</li>
-                    <li>Assisted families of special needs clients with researching financial assistance and healthcare.</li>
-                    <li>Assisted teachers with managing daily classroom activities.</li>
-                    <li>Oversaw daily and special student activities.</li>
+            <!-- Resideo Smart Home Technologies -->
+            <div class="mb-8 pb-6 border-b border-gray-700 last:border-b-0">
+                <div class="flex justify-between items-baseline mb-2">
+                    <h3 class="text-2xl font-semibold text-gray-100">Machine Learning Engineer</h3>
+                    <span class="text-md text-gray-400">Feb 2021 – Aug 2024 | India</span>
+                </div>
+                <p class="text-lg text-blue-300 mb-3">Resideo Smart Home Technologies (Honeywell Home)</p>
+                <ul class="list-disc ml-6 space-y-2 text-gray-300">
+                    <li>Developed time-series forecasting models using TensorFlow, XGBoost, and PySpark to analyze telemetry from more than 2.4 million connected thermostats, enabling energy optimization initiatives and reducing peak-load prediction errors across smart home environments.</li>
+                    <li>Built anomaly detection pipelines for HVAC devices using Scikit-learn and Kafka-based streaming data, processing approximately 3 million sensor events daily and identifying failure patterns that reduced customer support escalations by 18%.</li>
+                    <li>Designed recommendation and customer segmentation models with LightGBM, SHAP, and PostgreSQL, supporting personalized automation experiences for 1.4 million users and improving adoption of premium smart home features.</li>
+                    <li>Collaborated with firmware and embedded engineering teams to develop occupancy prediction algorithms and ensemble learning models based on sensor telemetry, enabling intelligent temperature scheduling across multiple device families.</li>
+                    <li>Established ML lifecycle practices with MLflow, Jenkins, Docker, Git, and A/B testing frameworks, reducing model retraining times from 9 hours to under 4 hours and enabling biweekly production releases.</li>
+                    <li>Created NLP pipelines using spaCy and NLTK to classify customer feedback and warranty claims, extracting insights from more than 2.7 million records and accelerating root cause investigations for recurring product issues.</li>
+                    <li>Provided production support for machine learning services hosted on AWS and Linux environments, conducted root cause analysis, documented model behavior, and resolved over 140 issues affecting prediction quality and pipeline reliability.</li>
                 </ul>
             </div>
         </section>
 
-        <!-- Employment History -->
-        <section class="mb-12 p-6 bg-gray-800 rounded-lg shadow-lg border border-gray-700">
-            <h2 class="text-3xl font-bold text-white mb-4">Employment History</h2>
-            <div class="space-y-4 text-gray-300">
-                <p><span class="font-semibold text-white">1999-2002:</span> Counseling Supervisor, The Wesley Center, Little Rock, Arkansas.</p>
-                <p><span class="font-semibold text-white">1997-1999:</span> Client Specialist, Rainbow Special Care Center, Little Rock, Arkansas</p>
-                <p><span class="font-semibold text-white">1996-1997:</span> Teacher’s Assistant, Cowell Elementary, Conway, Arkansas</p>
+        <!-- Selected Projects Section -->
+        <section class="p-6 bg-gray-800 rounded-lg shadow-md border border-gray-700">
+            <h2 class="text-3xl font-bold text-blue-400 mb-4">Selected Projects</h2>
+
+            <!-- Multimodal Document AI & Agent System -->
+            <div class="mb-8 pb-6 border-b border-gray-700 last:border-b-0">
+                <h3 class="text-2xl font-semibold text-gray-100 mb-2">Multimodal Document AI & Agent System</h3>
+                <ul class="list-disc ml-6 space-y-2 text-gray-300">
+                    <li>Built a multimodal document processing system integrating vision transformers, OCR pipelines, and LLM-based reasoning to extract structured data from invoices, IDs, and PDFs, processing 50K+ documents in batch and experimental settings with optimized per-page inference.</li>
+                    <li>Developed an LLM-based agent workflow using LangChain and retrieval-augmented generation over document embeddings to automate classification, field extraction, and validation tasks, reducing manual annotation effort by 25% in controlled evaluation experiments.</li>
+                </ul>
+            </div>
+
+            <!-- Real-Time LLM-Powered Decision Intelligence & Forecasting Platform -->
+            <div>
+                <h3 class="text-2xl font-semibold text-gray-100 mb-2">Real-Time LLM-Powered Decision Intelligence & Forecasting Platform</h3>
+                <ul class="list-disc ml-6 space-y-2 text-gray-300">
+                    <li>Developed a forecasting system combining time-series transformer models with LLM-assisted analytics to analyze operational and synthetic demand datasets, enabling near real-time prediction experiments with sub-2-second inference in prototype environments.</li>
+                    <li>Implemented a GenAI analytics layer using retrieval-augmented generation over historical datasets and dashboards, enabling natural language querying, anomaly explanation, and scenario analysis, improving forecasting accuracy (MAPE) by 18% in validation tests.</li>
+                </ul>
             </div>
         </section>
 
     </div>
-
 </body>
 </html>
