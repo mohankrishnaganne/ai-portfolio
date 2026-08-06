@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohan Krishna Ganne - Portfolio</title>
+    <title>John W. Smith - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         /* Custom scrollbar for dark theme */
@@ -11,231 +11,92 @@
             width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #1f2937; /* gray-800 */
+            background: #1f2937; /* bg-gray-800 */
         }
         ::-webkit-scrollbar-thumb {
-            background: #4b5563; /* gray-600 */
+            background: #4b5563; /* bg-gray-600 */
             border-radius: 4px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #6b7280; /* gray-500 */
+            background: #6b7280; /* bg-gray-500 */
         }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans leading-relaxed">
-    <div class="max-w-4xl mx-auto p-6 md:p-8">
+
+    <div class="max-w-4xl mx-auto p-6 md:p-8 lg:p-10">
 
         <!-- Header Section -->
-        <header class="text-center mb-8">
-            <h1 class="text-5xl font-extrabold text-white mb-2">Mohan Krishna Ganne</h1>
-            <p class="text-lg text-gray-300 mb-4">
-                +1 (316) 214-0932 | <a href="mailto:mohankrishna5618@gmail.com" class="text-blue-400 hover:underline">mohankrishna5618@gmail.com</a> | 
-                <a href="#" class="text-blue-400 hover:underline">LinkedIn</a> | 
-                <a href="#" class="text-blue-400 hover:underline">Portfolio</a> | Open to Relocation
-            </p>
-            <div class="bg-gray-800 p-4 rounded-lg shadow-md mb-6">
-                <h2 class="text-2xl font-semibold text-white mb-2">Education</h2>
-                <p class="text-lg text-gray-300">
-                    <strong>Master of Science in Data Science</strong> | Wichita State University, Kansas | GPA: 3.80/4.0
-                </p>
+        <header class="flex flex-col md:flex-row justify-between items-center mb-8 pb-4 border-b border-gray-700">
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <h1 class="text-4xl font-extrabold text-blue-400">John W. Smith</h1>
+                <p class="text-lg text-gray-300 mt-1">2002 Front Range Way Fort Collins, CO 80525</p>
+                <p class="text-lg text-gray-300">Email: <a href="mailto:jwsmith@colostate.edu" class="text-blue-300 hover:underline">jwsmith@colostate.edu</a></p>
+            </div>
+            <div class="text-center md:text-right text-sm">
+                <h2 class="text-xl font-semibold text-blue-300 mb-2">Education</h2>
+                <p class="text-gray-200 font-medium">University of Arkansas at Little Rock, Little Rock, AR</p>
+                <ul class="list-none p-0 m-0 text-gray-300">
+                    <li>BS in Early Childhood Development (1999)</li>
+                    <li>BA in Elementary Education (1998)</li>
+                    <li>GPA (4.0 Scale): Early Childhood Development – 3.8, Elementary Education – 3.5, Overall 3.4</li>
+                    <li>Dean’s List, Chancellor’s List</li>
+                </ul>
             </div>
         </header>
 
-        <!-- Summary Section -->
-        <section class="mb-8 bg-gray-800 p-6 rounded-lg shadow-md">
-            <h2 class="text-3xl font-bold text-white mb-4">Summary</h2>
-            <p class="text-gray-300 leading-relaxed">
-                AI/ML Engineer with 5+ years of experience building production-grade machine learning, Generative AI, and LLM systems across smart devices, 
-                digital engineering, and AI infrastructure domains. Experienced in developing RAG pipelines, multimodal AI applications, fine-tuning workflows, 
-                model evaluation frameworks, distributed data pipelines, and scalable inference services on cloud-native architectures. Strong background in 
-                MLOps, LLMOps, model serving, and end-to-end ownership of AI systems from experimentation through production deployment.
+        <!-- Career Summary -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-blue-300 mb-4 border-b border-gray-700 pb-2">Career Summary</h2>
+            <p class="text-gray-300 text-lg">
+                Four years experience in early childhood development with a diverse background in the care of special needs children and adults.
             </p>
         </section>
 
-        <!-- Skills Section -->
-        <section class="mb-8 bg-gray-800 p-6 rounded-lg shadow-md">
-            <h2 class="text-3xl font-bold text-white mb-4">Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-200 mb-2">Programming Languages</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Python</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">SQL</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Scala</span>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-200 mb-2">Machine Learning & Deep Learning</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">PyTorch</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">TensorFlow</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Scikit-learn</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">XGBoost</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">LightGBM</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Feature Engineering</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Hyperparameter Optimization</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Ensemble Learning</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Time-Series Forecasting</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Model Evaluation</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Explainable AI (SHAP, LIME)</span>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-200 mb-2">Generative AI & LLMs</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Hugging Face Transformers</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">LLaMA</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">GPT APIs</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Prompt Engineering</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">LangChain</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">LangGraph</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Tool-Calling Agents</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">LoRA</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">QLoRA</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">PEFT</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Fine-Tuning</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Retrieval-Augmented Generation (RAG)</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Embeddings</span>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-200 mb-2">Vector Databases & Retrieval</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Pinecone</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">FAISS</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Weaviate</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Elasticsearch</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Semantic Search</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Hybrid Search</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Cross-Encoder Reranking</span>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-200 mb-2">MLOps & AI Infrastructure</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">MLflow</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Weights & Biases</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Airflow</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">DVC</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Docker</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Kubernetes</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">CI/CD Pipelines</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Drift Detection</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">A/B Testing</span>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-200 mb-2">Distributed Computing & Data Engineering</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">Apache Spark</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Databricks</span>
-                        <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">Snowflake</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Kafka</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Ray</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">ETL Pipelines</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Distributed Training</span>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-200 mb-2">Model Serving & Optimization</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">FastAPI</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">REST APIs</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">gRPC</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">vLLM</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">ONNX Runtime</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">TensorRT</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Quantization</span>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-200 mb-2">Cloud Platforms</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">AWS (S3, EC2, Lambda, SageMaker, Bedrock)</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Azure OpenAI Service</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Terraform</span>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-200 mb-2">Databases, Tools & Platforms</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">PostgreSQL</span>
-                        <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">MongoDB</span>
-                        <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">Redis</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Git</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">GitHub Actions</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Linux</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Jira</span>
-                        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Confluence</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Professional Experience -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-blue-300 mb-4 border-b border-gray-700 pb-2">Professional Experience</h2>
 
-        <!-- Experience Section -->
-        <section class="mb-8 bg-gray-800 p-6 rounded-lg shadow-md">
-            <h2 class="text-3xl font-bold text-white mb-4">Experience</h2>
-
-            <!-- NIAR -->
-            <div class="mb-6 pb-6 border-b border-gray-700 last:border-b-0">
-                <div class="flex justify-between items-baseline mb-2">
-                    <h3 class="text-2xl font-semibold text-white">AI/ML Engineer</h3>
-                    <span class="text-gray-400 text-sm">Mar 2025 – Present | United States</span>
-                </div>
-                <p class="text-lg text-gray-300 mb-3">NIAR</p>
-                <ul class="list-disc list-inside space-y-2 text-gray-300">
-                    <li>Developed Generative AI and RAG-based engineering knowledge assistants using Python, LangChain, LangGraph, OpenAI APIs, Pinecone, and hybrid retrieval, enabling researchers to query 1.8 million technical records and reducing document search efforts by 320 hours per quarter.</li>
-                    <li>Built machine learning pipelines with PyTorch, Hugging Face Transformers, MLflow, and Databricks to support predictive maintenance and structural health monitoring initiatives, processing 14 TB of sensor and inspection datasets across aircraft sustainment programs.</li>
-                    <li>Fine-tuned domain-specific language models using LoRA, QLoRA, and PEFT techniques, reducing training resource requirements and supporting specialized question-answering workflows for engineering documentation and certification datasets.</li>
-                    <li>Designed FastAPI-based inference services with vLLM, ONNX Runtime, Docker, and Kubernetes, supporting approximately 75,000 monthly inference requests and reducing model release cycles from three weeks to six days.</li>
-                    <li>Developed evaluation frameworks using RAGAS, DeepEval, and hallucination detection techniques, supported production AI services, and resolved more than 110 issues affecting model reliability and data quality.</li>
-                    <li>Implemented distributed feature engineering and ETL pipelines using <span class="font-bold text-blue-400">Apache Spark</span>, Airflow, Kafka, <span class="font-bold text-blue-400">Snowflake</span>, and <span class="font-bold text-blue-400">AWS S3</span>, enabling scalable data ingestion and analytics for digital twin and predictive maintenance initiatives.</li>
+            <!-- Counseling Supervisor -->
+            <div class="mb-6 p-4 bg-gray-800 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-gray-200">Counseling Supervisor</h3>
+                <p class="text-sm text-gray-400 mb-2">The Wesley Center, Little Rock, Arkansas | 1999-2002</p>
+                <h4 class="text-lg font-medium text-gray-300 mb-2">Childcare Experience</h4>
+                <ul class="list-disc list-inside ml-4 text-gray-300 space-y-1">
+                    <li>Coordinated service assignments for 20 part-time counselors and 100 client families.</li>
+                    <li>Oversaw daily activity and outing planning for 100 clients.</li>
+                    <li>Assisted families of special needs clients with researching financial assistance and healthcare.</li>
+                    <li>Assisted teachers with managing daily classroom activities.</li>
+                    <li>Oversaw daily and special student activities.</li>
                 </ul>
             </div>
 
-            <!-- Resideo Smart Home Technologies -->
-            <div class="mb-6 pb-6 border-b border-gray-700 last:border-b-0">
-                <div class="flex justify-between items-baseline mb-2">
-                    <h3 class="text-2xl font-semibold text-white">Machine Learning Engineer</h3>
-                    <span class="text-gray-400 text-sm">Feb 2021 – Aug 2024 | India</span>
-                </div>
-                <p class="text-lg text-gray-300 mb-3">Resideo Smart Home Technologies (Honeywell Home)</p>
-                <ul class="list-disc list-inside space-y-2 text-gray-300">
-                    <li>Developed time-series forecasting models using TensorFlow, XGBoost, and <span class="font-bold text-blue-400">PySpark</span> to analyze telemetry from more than 2.4 million connected thermostats, enabling energy optimization initiatives and reducing peak-load prediction errors across smart home environments.</li>
-                    <li>Built anomaly detection pipelines for HVAC devices using Scikit-learn and <span class="font-bold text-blue-400">Kafka</span>-based streaming data, processing approximately 3 million sensor events daily and identifying failure patterns that reduced customer support escalations by 18%.</li>
-                    <li>Designed recommendation and customer segmentation models with LightGBM, SHAP, and <span class="font-bold text-blue-400">PostgreSQL</span>, supporting personalized automation experiences for 1.4 million users and improving adoption of premium smart home features.</li>
-                    <li>Implemented computer vision workflows using OpenCV, TensorFlow, and EfficientNet architectures to automate manufacturing processes, analyzing 620,000 device images and reducing manual review efforts by 430 engineering hours annually.</li>
-                    <li>Collaborated with firmware and embedded engineering teams to develop occupancy prediction algorithms and ensemble learning models based on sensor telemetry, enabling intelligent temperature scheduling across multiple device families.</li>
-                    <li>Established ML lifecycle practices with MLflow, Jenkins, Docker, Git, and A/B testing frameworks, reducing model retraining times from 9 hours to under 4 hours and enabling biweekly production releases.</li>
-                    <li>Created NLP pipelines using spaCy and NLTK to classify customer feedback and warranty claims, extracting insights from more than 2.7 million records and accelerating root cause investigations for recurring product issues.</li>
-                    <li>Provided production support for machine learning services hosted on <span class="font-bold text-blue-400">AWS</span> and Linux environments, conducted root cause analysis, documented model behavior, and resolved over 140 issues affecting prediction quality and pipeline reliability.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Selected Projects Section -->
-        <section class="mb-8 bg-gray-800 p-6 rounded-lg shadow-md">
-            <h2 class="text-3xl font-bold text-white mb-4">Selected Projects</h2>
-
-            <!-- Multimodal Document AI & Agent System -->
-            <div class="mb-6 pb-6 border-b border-gray-700 last:border-b-0">
-                <h3 class="text-2xl font-semibold text-white mb-2">Multimodal Document AI & Agent System</h3>
-                <ul class="list-disc list-inside space-y-2 text-gray-300">
-                    <li>Built a multimodal document processing system integrating vision transformers, OCR pipelines, and LLM-based reasoning to extract structured data from invoices, IDs, and PDFs, processing 50K+ documents in batch and experimental settings with optimized per-page inference.</li>
-                    <li>Developed an LLM-based agent workflow using LangChain and retrieval-augmented generation over document embeddings to automate classification, field extraction, and validation tasks, reducing manual annotation effort by 25% in controlled evaluation experiments.</li>
+            <!-- Client Specialist -->
+            <div class="mb-6 p-4 bg-gray-800 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-gray-200">Client Specialist</h3>
+                <p class="text-sm text-gray-400 mb-2">Rainbow Special Care Center, Little Rock, Arkansas | 1997-1999</p>
+                <h4 class="text-lg font-medium text-gray-300 mb-2">Adult Care Experience</h4>
+                <ul class="list-disc list-inside ml-4 text-gray-300 space-y-1">
+                    <li>Determined work placement for 150 special needs adult clients.</li>
+                    <li>Maintained client databases and records.</li>
+                    <li>Coordinated client contact with local health care professionals on a monthly basis.</li>
+                    <li>Managed 25 volunteer workers.</li>
                 </ul>
             </div>
 
-            <!-- Real-Time LLM-Powered Decision Intelligence & Forecasting Platform -->
-            <div class="mb-6 pb-6 border-b border-gray-700 last:border-b-0">
-                <h3 class="text-2xl font-semibold text-white mb-2">Real-Time LLM-Powered Decision Intelligence & Forecasting Platform</h3>
-                <ul class="list-disc list-inside space-y-2 text-gray-300">
-                    <li>Developed a forecasting system combining time-series transformer models with LLM-assisted analytics to analyze operational and synthetic demand datasets, enabling near real-time prediction experiments with sub-2-second inference in prototype environments.</li>
-                    <li>Implemented a GenAI analytics layer using retrieval-augmented generation over historical datasets and dashboards, enabling natural language querying, anomaly explanation, and scenario analysis, improving forecasting accuracy (MAPE) by 18% in validation tests.</li>
+            <!-- Teacher's Assistant -->
+            <div class="mb-6 p-4 bg-gray-800 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-gray-200">Teacher’s Assistant</h3>
+                <p class="text-sm text-gray-400 mb-2">Cowell Elementary, Conway, Arkansas | 1996-1997</p>
+                <ul class="list-disc list-inside ml-4 text-gray-300 space-y-1">
+                    <li>Assisted teachers with managing daily classroom activities.</li>
+                    <li>Oversaw daily and special student activities.</li>
                 </ul>
             </div>
+
         </section>
 
     </div>
+
 </body>
 </html>
