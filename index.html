@@ -1,27 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John W. Smith - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 antialiased">
 
-<div class="bg-gray-900 text-white min-h-screen p-8 font-sans">
-    <header class="border-b border-gray-700 pb-4 mb-8">
-        <h1 class="text-4xl font-bold text-blue-400">Mohan Krishna Ganne</h1>
-        <h2 class="text-xl text-gray-400 mt-2">Data Engineer | Data Analyst</h2>
-        <p class="text-sm text-gray-500 mt-1">M.S. Data Science, Wichita State University</p>
-    </header>
-    
-    <section class="mb-8">
-        <h3 class="text-2xl font-semibold text-green-400 mb-4">Core Stack</h3>
-        <div class="flex gap-3 flex-wrap">
-            <span class="px-3 py-1 bg-gray-800 rounded text-sm border border-gray-600">Apache Spark</span>
-            <span class="px-3 py-1 bg-gray-800 rounded text-sm border border-gray-600">AWS</span>
-            <span class="px-3 py-1 bg-gray-800 rounded text-sm border border-gray-600">Snowflake</span>
-            <span class="px-3 py-1 bg-gray-800 rounded text-sm border border-gray-600">Pandas</span>
-        </div>
-    </section>
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
 
-    <section>
-        <h3 class="text-2xl font-semibold text-green-400 mb-4">Experience</h3>
-        <div class="mb-4">
-            <h4 class="text-lg font-medium text-blue-300">Resideo & Niar</h4>
-            <p class="text-gray-300 text-sm mt-2">Engineered data pipelines and performed advanced analytics. (Test automation workflows successfully filtered from this view).</p>
-        </div>
-    </section>
-</div>
-        
+        <!-- Header Section -->
+        <header class="text-center mb-12">
+            <h1 class="text-5xl font-extrabold text-white mb-2">John W. Smith</h1>
+            <p class="text-lg text-gray-400 mb-4">2002 Front Range Way Fort Collins, CO 80525 | <a href="mailto:jwsmith@colostate.edu" class="text-blue-400 hover:underline">jwsmith@colostate.edu</a></p>
+
+            <!-- Education - Prominently Captured -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
+                <h2 class="text-3xl font-bold text-white mb-3">Education</h2>
+                <div class="text-left">
+                    <p class="text-xl font-semibold text-gray-300">University of Arkansas at Little Rock, Little Rock, AR</p>
+                    <ul class="list-disc list-inside ml-4 mt-2 text-gray-400">
+                        <li>BS in Early Childhood Development (1999)</li>
+                        <li>BA in Elementary Education (1998)</li>
+                        <li>GPA (4.0 Scale): Early Childhood Development – 3.8, Elementary Education – 3.5, Overall 3.4</li>
+                        <li>Dean’s List, Chancellor’s List</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- Career Summary -->
+        <section class="mb-12 p-6 bg-gray-800 rounded-lg shadow-lg border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-4">Career Summary</h2>
+            <p class="text-lg text-gray-300">Four years experience in early childhood development with a diverse background in the care of special needs children and adults.</p>
+        </section>
+
+        <!-- Experience Sections -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-white mb-6 text-center">Experience</h2>
+
+            <!-- Adult Care Experience -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 mb-8">
+                <h3 class="text-2xl font-semibold text-white mb-3">Adult Care Experience</h3>
+                <ul class="list-disc list-inside ml-4 text-gray-300 space-y-2">
+                    <li>Determined work placement for 150 special needs adult clients.</li>
+                    <li>Maintained client databases and records.</li>
+                    <li>Coordinated client contact with local health care professionals on a monthly basis.</li>
+                    <li>Managed 25 volunteer workers.</li>
+                </ul>
+            </div>
+
+            <!-- Childcare Experience -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
+                <h3 class="text-2xl font-semibold text-white mb-3">Childcare Experience</h3>
+                <ul class="list-disc list-inside ml-4 text-gray-300 space-y-2">
+                    <li>Coordinated service assignments for 20 part-time counselors and 100 client families.</li>
+                    <li>Oversaw daily activity and outing planning for 100 clients.</li>
+                    <li>Assisted families of special needs clients with researching financial assistance and healthcare.</li>
+                    <li>Assisted teachers with managing daily classroom activities.</li>
+                    <li>Oversaw daily and special student activities.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Employment History -->
+        <section class="mb-12 p-6 bg-gray-800 rounded-lg shadow-lg border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-4">Employment History</h2>
+            <div class="space-y-4 text-gray-300">
+                <p><span class="font-semibold text-white">1999-2002:</span> Counseling Supervisor, The Wesley Center, Little Rock, Arkansas.</p>
+                <p><span class="font-semibold text-white">1997-1999:</span> Client Specialist, Rainbow Special Care Center, Little Rock, Arkansas</p>
+                <p><span class="font-semibold text-white">1996-1997:</span> Teacher’s Assistant, Cowell Elementary, Conway, Arkansas</p>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
