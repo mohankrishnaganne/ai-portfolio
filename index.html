@@ -3,212 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Johnson - Senior Data Engineer Portfolio</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome CDN for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Alex Dataflow - Senior Data Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Alex Dataflow, a Senior Data Engineer specializing in scalable data pipelines, data warehousing, and cloud data solutions.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* Optional: Custom scrollbar for light theme */
+        /* Custom scrollbar for dark theme */
         ::-webkit-scrollbar {
-            width: 8px;
+            width: 10px;
         }
         ::-webkit-scrollbar-track {
-            background: #e5e7eb; /* gray-200 */
+            background: #1f2937; /* bg-gray-800 */
         }
         ::-webkit-scrollbar-thumb {
-            background: #4f46e5; /* indigo-600 */
-            border-radius: 4px;
+            background: #4b5563; /* bg-gray-600 */
+            border-radius: 5px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #6366f1; /* indigo-500 */
+            background: #6b7280; /* bg-gray-500 */
         }
     </style>
 </head>
-<body class="bg-white text-gray-900 font-sans leading-normal tracking-normal">
+<body class="bg-gray-900 text-gray-100 font-sans leading-normal tracking-normal">
 
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-
-        <!-- Header/Hero Section -->
-        <header class="flex flex-col items-center justify-center text-center py-16 sm:py-20 lg:py-24">
-            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-gray-900 mb-4">Alex Johnson</h1>
-            <p class="text-2xl sm:text-3xl text-indigo-600 font-semibold mb-8">Senior Data Engineer</p>
-            <div class="flex space-x-6">
-                <a href="https://linkedin.com/in/alexjohnson" target="_blank" class="text-gray-700 hover:text-indigo-600 transition duration-300">
-                    <i class="fab fa-linkedin text-3xl"></i>
-                </a>
-                <a href="https://github.com/alexjohnson" target="_blank" class="text-gray-700 hover:text-indigo-600 transition duration-300">
-                    <i class="fab fa-github text-3xl"></i>
-                </a>
-                <a href="mailto:alex.johnson@example.com" class="text-gray-700 hover:text-indigo-600 transition duration-300">
-                    <i class="fas fa-envelope text-3xl"></i>
-                </a>
+    <!-- Navigation (Optional, but good for long pages) -->
+    <nav class="bg-gray-800 p-4 shadow-lg fixed w-full z-10 top-0">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-teal-400 hover:text-teal-300">Alex Dataflow</a>
+            <div class="space-x-4">
+                <a href="#about" class="text-gray-300 hover:text-teal-400 transition duration-300">About</a>
+                <a href="#experience" class="text-gray-300 hover:text-teal-400 transition duration-300">Experience</a>
+                <a href="#projects" class="text-gray-300 hover:text-teal-400 transition duration-300">Projects</a>
+                <a href="#skills" class="text-gray-300 hover:text-teal-400 transition duration-300">Skills</a>
+                <a href="#education" class="text-gray-300 hover:text-teal-400 transition duration-300">Education</a>
+                <a href="#contact" class="text-gray-300 hover:text-teal-400 transition duration-300">Contact</a>
             </div>
-        </header>
+        </div>
+    </nav>
 
-        <!-- About Me Section -->
-        <section id="about" class="py-12 border-b border-gray-300">
-            <h2 class="text-4xl font-bold text-indigo-600 mb-8 text-center">About Me</h2>
-            <p class="text-lg leading-relaxed text-gray-700 text-center max-w-3xl mx-auto">
-                Passionate and results-driven Senior Data Engineer with over 8 years of experience designing, building, and optimizing large-scale data pipelines and data warehousing solutions. Proficient in cloud platforms (AWS, Azure), big data technologies (Spark, Kafka), and various databases (PostgreSQL, Snowflake, MongoDB). Committed to leveraging data to drive business insights and innovation.
+    <main class="container mx-auto p-8 pt-24"> <!-- Added pt-24 to account for fixed nav -->
+
+        <!-- Hero Section -->
+        <section id="hero" class="flex flex-col md:flex-row items-center justify-center text-center md:text-left py-16 md:py-24 bg-gray-800 rounded-lg shadow-xl mb-12">
+            <div class="md:w-1/3 mb-8 md:mb-0 md:mr-8">
+                <img src="https://via.placeholder.com/200/2C3E50/E0F2F1?text=Alex+D." alt="Alex Dataflow Profile Picture" class="rounded-full border-4 border-teal-500 shadow-lg mx-auto md:mx-0">
+            </div>
+            <div class="md:w-2/3">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-4 leading-tight">Alex Dataflow</h1>
+                <p class="text-3xl md:text-4xl font-semibold text-teal-400 mb-6">Senior Data Engineer</p>
+                <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto md:mx-0">
+                    Passionate about building robust, scalable, and efficient data pipelines and architectures that transform raw data into actionable insights.
+                </p>
+                <div class="mt-8 space-x-4">
+                    <a href="#contact" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">Get in Touch</a>
+                    <a href="https://linkedin.com/in/alexdataflow" target="_blank" rel="noopener noreferrer" class="bg-gray-700 hover:bg-gray-600 text-gray-200 font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="bg-gray-800 p-8 rounded-lg shadow-xl mb-12">
+            <h2 class="text-4xl font-bold text-teal-400 mb-6 border-b-2 border-teal-500 pb-2">About Me</h2>
+            <p class="text-lg text-gray-300 mb-4">
+                I am a Senior Data Engineer with over 7 years of experience in designing, developing, and optimizing large-scale data solutions. My expertise spans across the entire data lifecycle, from ingestion and processing to warehousing and analytics. I thrive on tackling complex data challenges and building resilient systems that drive business value.
+            </p>
+            <p class="text-lg text-gray-300">
+                My core strengths include proficiency in cloud platforms (AWS, GCP), big data technologies (Spark, Kafka, Flink), various databases (Snowflake, PostgreSQL, MongoDB), and programming languages like Python and Scala. I am a strong advocate for best practices in data governance, data quality, and automation, always striving for elegant and maintainable solutions.
             </p>
         </section>
 
+        <!-- Experience Section -->
+        <section id="experience" class="bg-gray-800 p-8 rounded-lg shadow-xl mb-12">
+            <h2 class="text-4xl font-bold text-teal-400 mb-6 border-b-2 border-teal-500 pb-2">Experience</h2>
+
+            <!-- Job 1 -->
+            <div class="mb-8 p-6 bg-gray-700 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <h3 class="text-2xl font-semibold text-white">Senior Data Engineer</h3>
+                <p class="text-xl text-teal-300">DataStream Innovations</p>
+                <p class="text-gray-400 mb-4">2021 - Present</p>
+                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                    <li>Designed and implemented scalable ETL/ELT pipelines using Apache Spark and Python for processing petabytes of data.</li>
+                    <li>Managed and optimized data warehouses on Snowflake, ensuring high performance and cost efficiency for analytical workloads.</li>
+                    <li>Developed real-time data ingestion systems with Apache Kafka and Apache Flink to support low-latency applications.</li>
+                    <li>Led a team of 3 junior data engineers, providing technical guidance and conducting code reviews.</li>
+                    <li>Implemented CI/CD pipelines for data applications using Jenkins and Docker.</li>
+                </ul>
+                <p class="mt-4 text-gray-400">Technologies: <span class="text-teal-300">Spark, Python, Snowflake, Kafka, Flink, AWS S3, Airflow, Docker, Jenkins</span></p>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="p-6 bg-gray-700 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <h3 class="text-2xl font-semibold text-white">Data Engineer</h3>
+                <p class="text-xl text-teal-300">Analytics Solutions Inc.</p>
+                <p class="text-gray-400 mb-4">2018 - 2021</p>
+                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                    <li>Built and maintained data pipelines for various business units using Python and SQL.</li>
+                    <li>Worked extensively with relational databases (PostgreSQL, MySQL) and NoSQL databases (MongoDB).</li>
+                    <li>Automated data quality checks and monitoring processes, reducing data discrepancies by 20%.</li>
+                    <li>Collaborated with data scientists to provide clean and reliable datasets for machine learning models.</li>
+                </ul>
+                <p class="mt-4 text-gray-400">Technologies: <span class="text-teal-300">Python, SQL, PostgreSQL, MongoDB, AWS EC2, Luigi, Tableau</span></p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-gray-800 p-8 rounded-lg shadow-xl mb-12">
+            <h2 class="text-4xl font-bold text-teal-400 mb-6 border-b-2 border-teal-500 pb-2">Projects</h2>
+
+            <!-- Project 1 -->
+            <div class="mb-8 p-6 bg-gray-700 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <h3 class="text-2xl font-semibold text-white">Real-time Anomaly Detection System</h3>
+                <p class="text-gray-300 mb-4">
+                    Developed a system to detect anomalies in streaming sensor data from IoT devices. Utilized Kafka for data ingestion, Flink for real-time processing and anomaly scoring, and a custom machine learning model (Scikit-learn) for detection. Results were visualized in Grafana.
+                </p>
+                <p class="text-gray-400">Technologies: <span class="text-teal-300">Kafka, Flink, Python, Scikit-learn, Grafana, Docker</span></p>
+                <a href="https://github.com/alexdataflow/anomaly-detection" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 text-teal-400 hover:text-teal-300 font-semibold">View on GitHub &rarr;</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="p-6 bg-gray-700 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <h3 class="text-2xl font-semibold text-white">Serverless Data Lake on AWS</h3>
+                <p class="text-gray-300 mb-4">
+                    Designed and implemented a cost-effective and scalable serverless data lake solution on AWS. Data was ingested into S3, processed using AWS Glue, and made queryable with AWS Athena. Orchestration handled by AWS Lambda and Step Functions. Infrastructure provisioned with CloudFormation.
+                </p>
+                <p class="text-gray-400">Technologies: <span class="text-teal-300">AWS S3, AWS Glue, AWS Athena, AWS Lambda, AWS Step Functions, CloudFormation</span></p>
+                <a href="https://github.com/alexdataflow/aws-data-lake" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 text-teal-400 hover:text-teal-300 font-semibold">View on GitHub &rarr;</a>
+            </div>
+        </section>
+
         <!-- Skills Section -->
-        <section id="skills" class="py-12 border-b border-gray-300">
-            <h2 class="text-4xl font-bold text-indigo-600 mb-8 text-center">Skills</h2>
+        <section id="skills" class="bg-gray-800 p-8 rounded-lg shadow-xl mb-12">
+            <h2 class="text-4xl font-bold text-teal-400 mb-6 border-b-2 border-teal-500 pb-2">Skills</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Languages</h3>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2">
-                        <li>Python</li>
-                        <li>SQL</li>
-                        <li>Java</li>
+                <div>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Programming Languages</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1">
+                        <li>Python (Advanced)</li>
+                        <li>SQL (Advanced)</li>
                         <li>Scala</li>
-                        <li>Go</li>
+                        <li>Java</li>
+                        <li>Bash</li>
                     </ul>
                 </div>
-                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Cloud Platforms</h3>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2">
-                        <li>AWS (S3, Glue, Redshift, Lambda, EC2)</li>
-                        <li>Azure (Data Factory, Synapse, Blob Storage)</li>
-                        <li>GCP (BigQuery, Dataflow)</li>
-                    </ul>
-                </div>
-                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Big Data Technologies</h3>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <div>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Big Data Frameworks</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1">
                         <li>Apache Spark</li>
                         <li>Apache Kafka</li>
-                        <li>Hadoop</li>
-                        <li>Flink</li>
+                        <li>Apache Flink</li>
+                        <li>Apache Hadoop</li>
+                        <li>Apache Airflow</li>
                     </ul>
                 </div>
-                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Databases</h3>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <div>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Databases & Warehouses</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1">
+                        <li>Snowflake</li>
                         <li>PostgreSQL</li>
                         <li>MySQL</li>
-                        <li>Snowflake</li>
                         <li>MongoDB</li>
                         <li>Cassandra</li>
                         <li>Redis</li>
                     </ul>
                 </div>
-                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Tools & Orchestration</h3>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2">
-                        <li>Airflow</li>
+                <div>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Cloud Platforms</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1">
+                        <li>AWS (EC2, S3, Glue, Athena, Lambda, Redshift, Kinesis)</li>
+                        <li>GCP (BigQuery, Dataflow, Dataproc, Cloud Storage)</li>
+                        <li>Azure (Data Factory, Data Lake Storage, Synapse Analytics)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Tools & DevOps</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1">
                         <li>Docker</li>
                         <li>Kubernetes</li>
                         <li>Git</li>
-                        <li>dbt</li>
                         <li>Terraform</li>
+                        <li>dbt (data build tool)</li>
+                        <li>Jira, Confluence</li>
                     </ul>
                 </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="py-12 border-b border-gray-300">
-            <h2 class="text-4xl font-bold text-indigo-600 mb-8 text-center">Experience</h2>
-            <div class="space-y-10">
-                <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
-                    <h3 class="text-3xl font-semibold text-gray-900 mb-2">Senior Data Engineer</h3>
-                    <p class="text-xl text-gray-700 mb-4">DataFlow Solutions Inc. | Jan 2021 - Present</p>
-                    <ul class="list-disc list-outside ml-6 text-gray-700 space-y-3">
-                        <li>Led the design and implementation of a real-time data streaming platform using Kafka and Spark Structured Streaming, processing over 10TB of data daily.</li>
-                        <li>Optimized existing ETL pipelines, reducing processing time by 30% and improving data quality by 15%.</li>
-                        <li>Mentored junior data engineers on best practices for data modeling, pipeline development, and cloud resource management.</li>
-                        <li>Developed and maintained scalable data warehouses on Snowflake, integrating data from various SaaS applications and operational databases.</li>
-                    </ul>
-                </div>
-                <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
-                    <h3 class="text-3xl font-semibold text-gray-900 mb-2">Data Engineer</h3>
-                    <p class="text-xl text-gray-700 mb-4">Tech Innovations Ltd. | Mar 2017 - Dec 2020</p>
-                    <ul class="list-disc list-outside ml-6 text-gray-700 space-y-3">
-                        <li>Built and maintained batch data pipelines using Apache Spark and Python for processing large datasets in an AWS environment (S3, Glue, Redshift).</li>
-                        <li>Implemented data quality checks and monitoring systems to ensure data integrity and reliability.</li>
-                        <li>Collaborated with data scientists and analysts to understand data requirements and deliver robust data solutions.</li>
-                        <li>Automated data ingestion processes from various sources, including APIs, relational databases, and flat files.</li>
+                <div>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Data Concepts</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1">
+                        <li>ETL/ELT Design</li>
+                        <li>Data Modeling (Dimensional, Star/Snowflake Schema)</li>
+                        <li>Data Governance & Quality</li>
+                        <li>Data Lake & Lakehouse Architectures</li>
+                        <li>Stream Processing</li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <!-- Education Section -->
-        <section id="education" class="py-12 border-b border-gray-300">
-            <h2 class="text-4xl font-bold text-indigo-600 mb-8 text-center">Education</h2>
-            <div class="space-y-10">
-                <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
-                    <h3 class="text-3xl font-semibold text-gray-900 mb-2">M.Sc. in Data Science</h3>
-                    <p class="text-xl text-gray-700 mb-4">University of Advanced Computing | Sep 2015 - Jun 2017</p>
-                    <ul class="list-disc list-outside ml-6 text-gray-700 space-y-3">
-                        <li>Specialization in Big Data Technologies and Machine Learning Engineering.</li>
-                        <li>Thesis: 'Scalable Real-time Anomaly Detection using Apache Flink'.</li>
-                    </ul>
-                </div>
-                <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
-                    <h3 class="text-3xl font-semibold text-gray-900 mb-2">B.Sc. in Computer Science</h3>
-                    <p class="text-xl text-gray-700 mb-4">State University | Sep 2011 - Jun 2015</p>
-                    <ul class="list-disc list-outside ml-6 text-gray-700 space-y-3">
-                        <li>Focus on Algorithms, Database Systems, and Distributed Computing.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        <section id="education" class="bg-gray-800 p-8 rounded-lg shadow-xl mb-12">
+            <h2 class="text-4xl font-bold text-teal-400 mb-6 border-b-2 border-teal-500 pb-2">Education</h2>
 
-        <!-- Projects Section -->
-        <section id="projects" class="py-12 border-b border-gray-300">
-            <h2 class="text-4xl font-bold text-indigo-600 mb-8 text-center">Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-gray-100 p-8 rounded-lg shadow-lg flex flex-col">
-                    <h3 class="text-3xl font-semibold text-gray-900 mb-3">Real-time Log Analytics Platform</h3>
-                    <p class="text-gray-700 mb-4 flex-grow">
-                        Designed and implemented a scalable platform for real-time log ingestion and analysis using Kafka, Spark Streaming, and Elasticsearch. Enabled immediate insights into application performance and security events.
-                    </p>
-                    <div class="mb-4">
-                        <span class="font-semibold text-indigo-600">Technologies:</span>
-                        <span class="text-gray-600">Kafka, Spark Streaming, Elasticsearch, Python, Docker</span>
-                    </div>
-                    <a href="https://github.com/alexjohnson/realtime-log-analytics" target="_blank" class="text-indigo-600 hover:text-indigo-500 font-medium flex items-center">
-                        View Project on GitHub <i class="fas fa-external-link-alt ml-2 text-sm"></i>
-                    </a>
-                </div>
-                <div class="bg-gray-100 p-8 rounded-lg shadow-lg flex flex-col">
-                    <h3 class="text-3xl font-semibold text-gray-900 mb-3">Customer 360 Data Lake</h3>
-                    <p class="text-gray-700 mb-4 flex-grow">
-                        Built a comprehensive customer 360 data lake on AWS (S3, Glue, Athena) by consolidating data from CRM, marketing, and transactional systems. Improved customer segmentation and personalization capabilities.
-                    </p>
-                    <div class="mb-4">
-                        <span class="font-semibold text-indigo-600">Technologies:</span>
-                        <span class="text-gray-600">AWS S3, AWS Glue, AWS Athena, Python, SQL, dbt</span>
-                    </div>
-                    <a href="https://github.com/alexjohnson/customer360-datalake" target="_blank" class="text-indigo-600 hover:text-indigo-500 font-medium flex items-center">
-                        View Project on GitHub <i class="fas fa-external-link-alt ml-2 text-sm"></i>
-                    </a>
-                </div>
+            <!-- Degree 1 -->
+            <div class="mb-8 p-6 bg-gray-700 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <h3 class="text-2xl font-semibold text-white">M.Sc. in Data Science</h3>
+                <p class="text-xl text-teal-300">University of Tech</p>
+                <p class="text-gray-400 mb-4">2016 - 2018</p>
+                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                    <li>Specialization in Big Data Architectures and Distributed Systems.</li>
+                    <li>Thesis: "Scalable Data Ingestion and Processing for High-Velocity IoT Devices."</li>
+                    <li>Relevant coursework: Advanced Database Systems, Machine Learning, Cloud Computing.</li>
+                </ul>
+            </div>
+
+            <!-- Degree 2 -->
+            <div class="p-6 bg-gray-700 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <h3 class="text-2xl font-semibold text-white">B.Sc. in Computer Science</h3>
+                <p class="text-xl text-teal-300">State University</p>
+                <p class="text-gray-400 mb-4">2012 - 2016</p>
+                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                    <li>Graduated with Honors.</li>
+                    <li>Relevant coursework: Algorithms and Data Structures, Operating Systems, Database Management.</li>
+                </ul>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-12 text-center">
-            <h2 class="text-4xl font-bold text-indigo-600 mb-8">Get in Touch</h2>
-            <p class="text-lg text-gray-700 mb-6">
-                I'm always open to discussing new projects, interesting opportunities, or just saying hello.
+        <section id="contact" class="bg-gray-800 p-8 rounded-lg shadow-xl text-center">
+            <h2 class="text-4xl font-bold text-teal-400 mb-6 border-b-2 border-teal-500 pb-2 inline-block">Contact Me</h2>
+            <p class="text-lg text-gray-300 mb-8">
+                I'm always open to discussing new projects, opportunities, or just chatting about data engineering. Feel free to reach out!
             </p>
-            <a href="mailto:alex.johnson@example.com" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-flex items-center">
-                <i class="fas fa-paper-plane mr-3"></i> Say Hello
-            </a>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                <a href="mailto:alex.dataflow@example.com" class="flex items-center text-gray-200 hover:text-teal-400 text-xl transition duration-300">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                    alex.dataflow@example.com
+                </a>
+                <a href="https://linkedin.com/in/alexdataflow" target="_blank" rel="noopener noreferrer" class="flex items-center text-gray-200 hover:text-teal-400 text-xl transition duration-300">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/alexdataflow" target="_blank" rel="noopener noreferrer" class="flex items-center text-gray-200 hover:text-teal-400 text-xl transition duration-300">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.835 2.809 1.305 3.493.998.108-.776.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.197-6.091 8.197-11.387 0-6.627-5.373-12-12-12z"/></svg>
+                    GitHub
+                </a>
+            </div>
         </section>
 
-        <!-- Footer -->
-        <footer class="text-center py-8 text-gray-600 text-sm">
-            <p>&copy; 2023 Alex Johnson. All rights reserved.</p>
-        </footer>
+    </main>
 
-    </div>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 text-center p-6 mt-12 shadow-inner">
+        <p>&copy; 2023 Alex Dataflow. All rights reserved. Built with Tailwind CSS.</p>
+    </footer>
 
 </body>
 </html>
