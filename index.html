@@ -3,192 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohan Krishna Ganne - Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Alex Johnson - Senior Data Engineer Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
+        /* Optional: Custom scrollbar for light theme */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e5e7eb; /* gray-200 */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4f46e5; /* indigo-600 */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6366f1; /* indigo-500 */
         }
     </style>
 </head>
-<body class="bg-blue-50 text-gray-900 antialiased leading-relaxed">
+<body class="bg-white text-gray-900 font-sans leading-normal tracking-normal">
 
-    <div class="container mx-auto px-4 py-8 max-w-4xl">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
 
-        <!-- Header Section -->
-        <header class="mb-10 text-center">
-            <h1 class="text-5xl font-extrabold text-gray-900 mb-2">Mohan Krishna Ganne</h1>
-            <p class="text-lg text-gray-700 mb-4">AI/ML Engineer with 5+ years of experience</p>
-            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-md text-gray-800 mb-6">
-                <span>+1 (316) 214-0932</span>
-                <span>|</span>
-                <a href="mailto:mohankrishna5618@gmail.com" class="text-blue-600 hover:underline">mohankrishna5618@gmail.com</a>
-                <span>|</span>
-                <a href="#" class="text-blue-600 hover:underline">LinkedIn</a>
-                <span>|</span>
-                <a href="#" class="text-blue-600 hover:underline">Portfolio</a>
-                <span>|</span>
-                <span>Open to Relocation</span>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">Education</h2>
-                <p class="text-lg text-gray-800">
-                    <span class="font-semibold">Master of Science in Data Science</span> | Wichita State University, Kansas
-                </p>
-                <p class="text-md text-gray-700">GPA: 3.80/4.0</p>
+        <!-- Header/Hero Section -->
+        <header class="flex flex-col items-center justify-center text-center py-16 sm:py-20 lg:py-24">
+            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-gray-900 mb-4">Alex Johnson</h1>
+            <p class="text-2xl sm:text-3xl text-indigo-600 font-semibold mb-8">Senior Data Engineer</p>
+            <div class="flex space-x-6">
+                <a href="https://linkedin.com/in/alexjohnson" target="_blank" class="text-gray-700 hover:text-indigo-600 transition duration-300">
+                    <i class="fab fa-linkedin text-3xl"></i>
+                </a>
+                <a href="https://github.com/alexjohnson" target="_blank" class="text-gray-700 hover:text-indigo-600 transition duration-300">
+                    <i class="fab fa-github text-3xl"></i>
+                </a>
+                <a href="mailto:alex.johnson@example.com" class="text-gray-700 hover:text-indigo-600 transition duration-300">
+                    <i class="fas fa-envelope text-3xl"></i>
+                </a>
             </div>
         </header>
 
-        <!-- Summary Section -->
-        <section class="mb-10 p-6 bg-white rounded-lg shadow-lg">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4 border-b border-gray-300 pb-2">Summary</h2>
-            <p class="text-gray-800 leading-relaxed">
-                AI/ML Engineer with 5+ years of experience building production-grade machine learning, Generative AI, and LLM systems across smart devices,
-                digital engineering, and AI infrastructure domains. Experienced in developing RAG pipelines, multimodal AI applications, fine-tuning workflows,
-                model evaluation frameworks, distributed data pipelines, and scalable inference services on cloud-native architectures. Strong background in
-                MLOps, LLMOps, model serving, and end-to-end ownership of AI systems from experimentation through production deployment.
+        <!-- About Me Section -->
+        <section id="about" class="py-12 border-b border-gray-300">
+            <h2 class="text-4xl font-bold text-indigo-600 mb-8 text-center">About Me</h2>
+            <p class="text-lg leading-relaxed text-gray-700 text-center max-w-3xl mx-auto">
+                Passionate and results-driven Senior Data Engineer with over 8 years of experience designing, building, and optimizing large-scale data pipelines and data warehousing solutions. Proficient in cloud platforms (AWS, Azure), big data technologies (Spark, Kafka), and various databases (PostgreSQL, Snowflake, MongoDB). Committed to leveraging data to drive business insights and innovation.
             </p>
         </section>
 
         <!-- Skills Section -->
-        <section class="mb-10 p-6 bg-white rounded-lg shadow-lg">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4 border-b border-gray-300 pb-2">Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div>
-                    <h3 class="text-xl font-semibold text-blue-600 mb-2">Programming Languages</h3>
-                    <ul class="list-disc list-inside text-gray-800 space-y-1">
+        <section id="skills" class="py-12 border-b border-gray-300">
+            <h2 class="text-4xl font-bold text-indigo-600 mb-8 text-center">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Languages</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
                         <li>Python</li>
                         <li>SQL</li>
+                        <li>Java</li>
                         <li>Scala</li>
+                        <li>Go</li>
                     </ul>
                 </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-blue-600 mb-2">ML & Deep Learning</h3>
-                    <ul class="list-disc list-inside text-gray-800 space-y-1">
-                        <li>PyTorch, TensorFlow, Scikit-learn, XGBoost, LightGBM</li>
-                        <li>Feature Engineering, Hyperparameter Optimization</li>
-                        <li>Ensemble Learning, Time-Series Forecasting</li>
-                        <li>Model Evaluation, Explainable AI (SHAP, LIME)</li>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Cloud Platforms</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>AWS (S3, Glue, Redshift, Lambda, EC2)</li>
+                        <li>Azure (Data Factory, Synapse, Blob Storage)</li>
+                        <li>GCP (BigQuery, Dataflow)</li>
                     </ul>
                 </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-blue-600 mb-2">Generative AI & LLMs</h3>
-                    <ul class="list-disc list-inside text-gray-800 space-y-1">
-                        <li>Hugging Face Transformers, LLaMA, GPT APIs</li>
-                        <li>Prompt Engineering, LangChain, LangGraph, Tool-Calling Agents</li>
-                        <li>LoRA, QLoRA, PEFT, Fine-Tuning</li>
-                        <li>Retrieval-Augmented Generation (RAG), Embeddings</li>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Big Data Technologies</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Apache Spark</li>
+                        <li>Apache Kafka</li>
+                        <li>Hadoop</li>
+                        <li>Flink</li>
                     </ul>
                 </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-blue-600 mb-2">Vector Databases & Retrieval</h3>
-                    <ul class="list-disc list-inside text-gray-800 space-y-1">
-                        <li>Pinecone, FAISS, Weaviate, Elasticsearch</li>
-                        <li>Semantic Search, Hybrid Search, Cross-Encoder Reranking</li>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Databases</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>PostgreSQL</li>
+                        <li>MySQL</li>
+                        <li>Snowflake</li>
+                        <li>MongoDB</li>
+                        <li>Cassandra</li>
+                        <li>Redis</li>
                     </ul>
                 </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-blue-600 mb-2">MLOps & AI Infrastructure</h3>
-                    <ul class="list-disc list-inside text-gray-800 space-y-1">
-                        <li>MLflow, Weights & Biases, Airflow, DVC</li>
-                        <li>Docker, Kubernetes, CI/CD Pipelines</li>
-                        <li>Drift Detection, A/B Testing</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-blue-600 mb-2">Distributed Computing & Data Engineering</h3>
-                    <ul class="list-disc list-inside text-gray-800 space-y-1">
-                        <li>Apache Spark, Databricks, Snowflake, Kafka, Ray</li>
-                        <li>ETL Pipelines, Distributed Training</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-blue-600 mb-2">Model Serving & Optimization</h3>
-                    <ul class="list-disc list-inside text-gray-800 space-y-1">
-                        <li>FastAPI, REST APIs, gRPC</li>
-                        <li>vLLM, ONNX Runtime, TensorRT, Quantization</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-blue-600 mb-2">Cloud Platforms</h3>
-                    <ul class="list-disc list-inside text-gray-800 space-y-1">
-                        <li>AWS (S3, EC2, Lambda, SageMaker, Bedrock)</li>
-                        <li>Azure OpenAI Service, Terraform</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-blue-600 mb-2">Databases, Tools & Platforms</h3>
-                    <ul class="list-disc list-inside text-gray-800 space-y-1">
-                        <li>PostgreSQL, MongoDB, Redis</li>
-                        <li>Git, GitHub Actions, Linux, Jira, Confluence</li>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Tools & Orchestration</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Airflow</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>Git</li>
+                        <li>dbt</li>
+                        <li>Terraform</li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <!-- Experience Section -->
-        <section class="mb-10 p-6 bg-white rounded-lg shadow-lg">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4 border-b border-gray-300 pb-2">Experience</h2>
-
-            <!-- NIAR -->
-            <div class="mb-8">
-                <div class="flex justify-between items-baseline mb-2">
-                    <h3 class="text-2xl font-semibold text-gray-900">AI/ML Engineer</h3>
-                    <span class="text-gray-700">Mar 2025 – Present | United States</span>
+        <section id="experience" class="py-12 border-b border-gray-300">
+            <h2 class="text-4xl font-bold text-indigo-600 mb-8 text-center">Experience</h2>
+            <div class="space-y-10">
+                <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
+                    <h3 class="text-3xl font-semibold text-gray-900 mb-2">Senior Data Engineer</h3>
+                    <p class="text-xl text-gray-700 mb-4">DataFlow Solutions Inc. | Jan 2021 - Present</p>
+                    <ul class="list-disc list-outside ml-6 text-gray-700 space-y-3">
+                        <li>Led the design and implementation of a real-time data streaming platform using Kafka and Spark Structured Streaming, processing over 10TB of data daily.</li>
+                        <li>Optimized existing ETL pipelines, reducing processing time by 30% and improving data quality by 15%.</li>
+                        <li>Mentored junior data engineers on best practices for data modeling, pipeline development, and cloud resource management.</li>
+                        <li>Developed and maintained scalable data warehouses on Snowflake, integrating data from various SaaS applications and operational databases.</li>
+                    </ul>
                 </div>
-                <p class="text-lg text-blue-600 mb-3">NIAR</p>
-                <ul class="list-disc list-outside ml-6 text-gray-800 space-y-2">
-                    <li>Developed Generative AI and RAG-based engineering knowledge assistants using Python, LangChain, LangGraph, OpenAI APIs, Pinecone, and hybrid retrieval, enabling researchers to query 1.8 million technical records and reducing document search efforts by 320 hours per quarter.</li>
-                    <li>Built machine learning pipelines with PyTorch, Hugging Face Transformers, MLflow, and Databricks to support predictive maintenance and structural health monitoring initiatives, processing 14 TB of sensor and inspection datasets across aircraft sustainment programs.</li>
-                    <li>Fine-tuned domain-specific language models using LoRA, QLoRA, and PEFT techniques, reducing training resource requirements and supporting specialized question-answering workflows for engineering documentation and certification datasets.</li>
-                    <li>Designed FastAPI-based inference services with vLLM, ONNX Runtime, Docker, and Kubernetes, supporting approximately 75,000 monthly inference requests and reducing model release cycles from three weeks to six days.</li>
-                    <li>Developed evaluation frameworks using RAGAS, DeepEval, and hallucination detection techniques, supported production AI services, and resolved more than 110 issues affecting model reliability and data quality.</li>
-                    <li>Implemented distributed feature engineering and ETL pipelines using <span class="font-semibold text-green-700">Apache Spark</span>, Airflow, Kafka, <span class="font-semibold text-green-700">Snowflake</span>, and <span class="font-semibold text-green-700">AWS S3</span>, enabling scalable data ingestion and analytics for digital twin and predictive maintenance initiatives.</li>
-                </ul>
-            </div>
-
-            <!-- Resideo Smart Home Technologies -->
-            <div>
-                <div class="flex justify-between items-baseline mb-2">
-                    <h3 class="text-2xl font-semibold text-gray-900">Machine Learning Engineer</h3>
-                    <span class="text-gray-700">Feb 2021 – Aug 2024 | India</span>
+                <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
+                    <h3 class="text-3xl font-semibold text-gray-900 mb-2">Data Engineer</h3>
+                    <p class="text-xl text-gray-700 mb-4">Tech Innovations Ltd. | Mar 2017 - Dec 2020</p>
+                    <ul class="list-disc list-outside ml-6 text-gray-700 space-y-3">
+                        <li>Built and maintained batch data pipelines using Apache Spark and Python for processing large datasets in an AWS environment (S3, Glue, Redshift).</li>
+                        <li>Implemented data quality checks and monitoring systems to ensure data integrity and reliability.</li>
+                        <li>Collaborated with data scientists and analysts to understand data requirements and deliver robust data solutions.</li>
+                        <li>Automated data ingestion processes from various sources, including APIs, relational databases, and flat files.</li>
+                    </ul>
                 </div>
-                <p class="text-lg text-blue-600 mb-3">Resideo Smart Home Technologies (Honeywell Home)</p>
-                <ul class="list-disc list-outside ml-6 text-gray-800 space-y-2">
-                    <li>Developed time-series forecasting models using TensorFlow, XGBoost, and <span class="font-semibold text-green-700">PySpark</span> to analyze telemetry from more than 2.4 million connected thermostats, enabling energy optimization initiatives and reducing peak-load prediction errors across smart home environments.</li>
-                    <li>Built anomaly detection pipelines for HVAC devices using Scikit-learn and Kafka-based streaming data, processing approximately 3 million sensor events daily and identifying failure patterns that reduced customer support escalations by 18%.</li>
-                    <li>Designed recommendation and customer segmentation models with LightGBM, SHAP, and <span class="font-semibold text-green-700">PostgreSQL</span>, supporting personalized automation experiences for 1.4 million users and improving adoption of premium smart home features.</li>
-                    <li>Implemented computer vision workflows using OpenCV, TensorFlow, and EfficientNet architectures to automate manufacturing inspections, analyzing 620,000 device images and reducing manual review efforts by 430 engineering hours annually.</li>
-                    <li>Collaborated with firmware and embedded engineering teams to develop occupancy prediction algorithms and ensemble learning models based on sensor telemetry, enabling intelligent temperature scheduling across multiple device families.</li>
-                    <li>Established ML lifecycle practices with MLflow, Jenkins, Docker, Git, and A/B testing frameworks, reducing model retraining times from 9 hours to under 4 hours and enabling biweekly production releases.</li>
-                    <li>Created NLP pipelines using spaCy and NLTK to classify customer feedback and warranty claims, extracting insights from more than 2.7 million records and accelerating root cause investigations for recurring product issues.</li>
-                    <li>Provided production support for machine learning services hosted on <span class="font-semibold text-green-700">AWS</span> and Linux environments, conducted root cause analysis, documented model behavior, and resolved over 140 issues affecting prediction quality and pipeline reliability.</li>
-                </ul>
             </div>
         </section>
 
-        <!-- Selected Projects Section -->
-        <section class="p-6 bg-white rounded-lg shadow-lg">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4 border-b border-gray-300 pb-2">Selected Projects</h2>
-
-            <!-- Multimodal Document AI & Agent System -->
-            <div class="mb-8">
-                <h3 class="text-2xl font-semibold text-gray-900 mb-2">Multimodal Document AI & Agent System</h3>
-                <ul class="list-disc list-outside ml-6 text-gray-800 space-y-2">
-                    <li>Built a multimodal document processing system integrating vision transformers, OCR pipelines, and LLM-based reasoning to extract structured data from invoices, IDs, and PDFs, processing 50K+ documents in batch and experimental settings with optimized per-page inference.</li>
-                    <li>Developed an LLM-based agent workflow using LangChain and retrieval-augmented generation over document embeddings to automate classification, field extraction, and validation tasks, reducing manual annotation effort by 25% in controlled evaluation experiments.</li>
-                </ul>
-            </div>
-
-            <!-- Real-Time LLM-Powered Decision Intelligence & Forecasting Platform -->
-            <div>
-                <h3 class="text-2xl font-semibold text-gray-900 mb-2">Real-Time LLM-Powered Decision Intelligence & Forecasting Platform</h3>
-                <ul class="list-disc list-outside ml-6 text-gray-800 space-y-2">
-                    <li>Developed a forecasting system combining time-series transformer models with LLM-assisted analytics to analyze operational and synthetic demand datasets, enabling near real-time prediction experiments with sub-2-second inference in prototype environments.</li>
-                    <li>Implemented a GenAI analytics layer using retrieval-augmented generation over historical datasets and dashboards, enabling natural language querying, anomaly explanation, and scenario analysis, improving forecasting accuracy (MAPE) by 18% in validation tests.</li>
-                </ul>
+        <!-- Education Section -->
+        <section id="education" class="py-12 border-b border-gray-300">
+            <h2 class="text-4xl font-bold text-indigo-600 mb-8 text-center">Education</h2>
+            <div class="space-y-10">
+                <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
+                    <h3 class="text-3xl font-semibold text-gray-900 mb-2">M.Sc. in Data Science</h3>
+                    <p class="text-xl text-gray-700 mb-4">University of Advanced Computing | Sep 2015 - Jun 2017</p>
+                    <ul class="list-disc list-outside ml-6 text-gray-700 space-y-3">
+                        <li>Specialization in Big Data Technologies and Machine Learning Engineering.</li>
+                        <li>Thesis: 'Scalable Real-time Anomaly Detection using Apache Flink'.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
+                    <h3 class="text-3xl font-semibold text-gray-900 mb-2">B.Sc. in Computer Science</h3>
+                    <p class="text-xl text-gray-700 mb-4">State University | Sep 2011 - Jun 2015</p>
+                    <ul class="list-disc list-outside ml-6 text-gray-700 space-y-3">
+                        <li>Focus on Algorithms, Database Systems, and Distributed Computing.</li>
+                    </ul>
+                </div>
             </div>
         </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-12 border-b border-gray-300">
+            <h2 class="text-4xl font-bold text-indigo-600 mb-8 text-center">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-100 p-8 rounded-lg shadow-lg flex flex-col">
+                    <h3 class="text-3xl font-semibold text-gray-900 mb-3">Real-time Log Analytics Platform</h3>
+                    <p class="text-gray-700 mb-4 flex-grow">
+                        Designed and implemented a scalable platform for real-time log ingestion and analysis using Kafka, Spark Streaming, and Elasticsearch. Enabled immediate insights into application performance and security events.
+                    </p>
+                    <div class="mb-4">
+                        <span class="font-semibold text-indigo-600">Technologies:</span>
+                        <span class="text-gray-600">Kafka, Spark Streaming, Elasticsearch, Python, Docker</span>
+                    </div>
+                    <a href="https://github.com/alexjohnson/realtime-log-analytics" target="_blank" class="text-indigo-600 hover:text-indigo-500 font-medium flex items-center">
+                        View Project on GitHub <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                    </a>
+                </div>
+                <div class="bg-gray-100 p-8 rounded-lg shadow-lg flex flex-col">
+                    <h3 class="text-3xl font-semibold text-gray-900 mb-3">Customer 360 Data Lake</h3>
+                    <p class="text-gray-700 mb-4 flex-grow">
+                        Built a comprehensive customer 360 data lake on AWS (S3, Glue, Athena) by consolidating data from CRM, marketing, and transactional systems. Improved customer segmentation and personalization capabilities.
+                    </p>
+                    <div class="mb-4">
+                        <span class="font-semibold text-indigo-600">Technologies:</span>
+                        <span class="text-gray-600">AWS S3, AWS Glue, AWS Athena, Python, SQL, dbt</span>
+                    </div>
+                    <a href="https://github.com/alexjohnson/customer360-datalake" target="_blank" class="text-indigo-600 hover:text-indigo-500 font-medium flex items-center">
+                        View Project on GitHub <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-12 text-center">
+            <h2 class="text-4xl font-bold text-indigo-600 mb-8">Get in Touch</h2>
+            <p class="text-lg text-gray-700 mb-6">
+                I'm always open to discussing new projects, interesting opportunities, or just saying hello.
+            </p>
+            <a href="mailto:alex.johnson@example.com" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-flex items-center">
+                <i class="fas fa-paper-plane mr-3"></i> Say Hello
+            </a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center py-8 text-gray-600 text-sm">
+            <p>&copy; 2023 Alex Johnson. All rights reserved.</p>
+        </footer>
 
     </div>
 
